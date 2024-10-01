@@ -1,0 +1,172 @@
+/* style.css */
+
+body {
+    background-image: url("vangogh.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    from {background-image: url("vangogh.gif");}
+    to {background-color: blue;}
+  }
+
+/* Import the custom font */
+@font-face {
+    font-family: 'InkheartBrushDry';
+    src: url('fonts/Fenotype - InkheartBrushDry.otf') format('opentype');
+}
+
+/* Apply the custom font to Ja Motogeek */
+h1 {
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-family: 'InkheartBrushDry', 'Courier New', Courier, monospace; /* Use custom font */
+    font-size: 6rem;
+    margin: 0;
+}
+ 
+
+.title-box {
+    border: solid lightskyblue;
+    border-width: 10px;
+    border-radius: 15px;
+    background-color: #f0e68c; /* Adjust to match desired color */
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    margin: 20px;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: #f0e68c; /* Match background color with title-box */
+    border: solid lightskyblue; /* Match border color with title-box */
+    border-width: 5px; /* Match border width */
+    border-radius: 15px; /* Match border radius */
+    padding: 10px; /* Padding inside the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for visual effect */
+    margin: 20px 0; /* Margin for spacing */
+}
+
+.biography-box {
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+    background-color: lightskyblue; /* Set background color */
+    border: 5px solid #f0e68c; /* Same color as "Ja Motogeek" title */
+    border-radius: 15px; /* Rounded edges */
+    padding: 20px; /* Padding inside the box */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for the box */
+    max-width: 90%; /* Maximum width for the box, adjust as needed */
+    margin: 20px; /* Space around the box */
+    word-wrap: break-word; /* Ensure long words wrap properly */
+}
+
+.biography-box p {
+    margin: 10px 0; /* Space between paragraphs */
+    text-align: center; /* Center the text */
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Center navigation links */
+}
+
+ul {
+    list-style: none;
+    padding: 0; /* Remove default padding */
+}
+
+li {
+    margin: 5px 0; /* Space between list items */
+}
+
+a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: lightskyblue; /* Background color for links */
+    color: white; /* Font color for links */
+    border-radius: 8px; /* Rounded edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Add box shadow */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+a:hover {
+    background-color: dodgerblue; /* Change color on hover */
+}
+
+.forms {
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Arrange children in a column */
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Center children vertically */
+    background-color: lightskyblue; /* Set background color */
+    border: 5px solid #f0e68c; /* Same color as "Ja Motogeek" title */
+    border-radius: 15px; /* Rounded edges */
+    padding: 20px; /* Padding inside the box */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for the box */
+    max-width: 90%; /* Maximum width for the box, adjust as needed */
+    margin: 20px; /* Space around the box */
+    word-wrap: break-word;
+    border-radius: 15px;
+    border: #f0e68c, 5px;
+}
+
+.forms td,tr { 
+    display:flex; /*trying to adjust spacing in the form box*/
+    flex-wrap: wrap;
+
+    
+
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust for spacing */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: lightskyblue; /* Match background color */
+    color: white;
+    border: 5px solid #f0e68c; /* Match border color */
+    border-radius: 8px; /* Match border radius with other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Match shadow style */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+button:hover {
+    background-color: dodgerblue; /* Match hover effect for links */
+}
+
+caption {
+    align-self: flex-start; /*added some fancy stuff to my caption in the input form */
+    font-family: 'InkheartBrushDry';
+    src: url('fonts/Fenotype - InkheartBrushDry.otf') format('opentype');
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 30em) {
+    .link {
+        max-width: 90%;
+    }
+}
+.table title {
+    display: flex;
+    align-items:flex-start;
+}
