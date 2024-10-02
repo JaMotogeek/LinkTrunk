@@ -1,4 +1,4 @@
-const boardSize = 5;
+const boardSize = 6;  // Change to 6x6 board
 
 function createBoard() {
   const squares = Array(boardSize * boardSize).fill(null);
@@ -27,23 +27,32 @@ function renderBoard(boardElement, squares, handleClick) {
 
 function calculateWinner(squares) {
   const lines = [];
+  const winCondition = 4; // We need 4 in a row to win
+
   for (let i = 0; i < boardSize; i++) {
     for (let j = 0; j < boardSize; j++) {
-      if (j <= boardSize - 5) {
-        lines.push([i * boardSize + j, i * boardSize + j + 1, i * boardSize + j + 2, i * boardSize + j + 3, i * boardSize + j + 4]); // horizontal
+      // Check horizontal win (right)
+      if (j <= boardSize - winCondition) {
+        lines.push([i * boardSize + j, i * boardSize + j + 1, i * boardSize + j + 2, i * boardSize + j + 3]); // 4 in a row horizontally
       }
-      if (i <= boardSize - 5) {
-        lines.push([i * boardSize + j, (i + 1) * boardSize + j, (i + 2) * boardSize + j, (i + 3) * boardSize + j, (i + 4) * boardSize + j]); // vertical
+      // Check vertical win (down)
+      if (i <= boardSize - winCondition) {
+        lines.push([i * boardSize + j, (i + 1) * boardSize + j, (i + 2) * boardSize + j, (i + 3) * boardSize + j]); // 4 in a row vertically
       }
-      if (i <= boardSize - 5 && j <= boardSize - 5) {
-        lines.push([i * boardSize + j, (i + 1) * boardSize + (j + 1), (i + 2) * boardSize + (j + 2), (i + 3) * boardSize + (j + 3), (i + 4) * boardSize + (j + 4)]); // diagonal \
-        lines.push([i * boardSize + (boardSize - 1 - j), (i + 1) * boardSize + (boardSize - 2 - j), (i + 2) * boardSize + (boardSize - 3 - j), (i + 3) * boardSize + (boardSize - 4 - j), (i + 4) * boardSize + (boardSize - 5 - j)]); // diagonal /
+      // Check diagonal win (down-right)
+      if (i <= boardSize - winCondition && j <= boardSize - winCondition) {
+        lines.push([i * boardSize + j, (i + 1) * boardSize + (j + 1), (i + 2) * boardSize + (j + 2), (i + 3) * boardSize + (j + 3)]); // diagonal \
+      }
+      // Check diagonal win (down-left)
+      if (i <= boardSize - winCondition && j >= winCondition - 1) {
+        lines.push([i * boardSize + j, (i + 1) * boardSize + (j - 1), (i + 2) * boardSize + (j - 2), (i + 3) * boardSize + (j - 3)]); // diagonal /
       }
     }
   }
+
   for (const line of lines) {
-    const [a, b, c, d, e] = line;
-    if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c] && squares[a] === squares[d] && squares[a] === squares[e]) {
+    const [a, b, c, d] = line;
+    if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c] && squares[a] === squares[d]) {
       return squares[a];
     }
   }

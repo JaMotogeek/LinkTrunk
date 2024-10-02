@@ -199,9 +199,9 @@ caption {
     background-color: rgb(255, 106, 0);
 }
 .square {
-    width: 60px; /* Set fixed width */
-    height: 60px; /* Set fixed height */
-    font-size: 24px; /* Font size inside the button */
+    width: 50px; /* Adjusted width */
+    height: 50px; /* Adjusted height */
+    font-size: 20px;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
@@ -213,4 +213,5 @@ caption {
 .board-row {
     display: flex;
 }
+
 
