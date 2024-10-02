@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- add nav bar here when more pages are complete -->
+    <!-- Add your nav bar if necessary -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ja Motogeek</title>
     <link rel="stylesheet" href="style.css">
-    <script> src="test.js"</script>
+    <script src="connectFive.js" defer></script> <!-- Link to your JS file -->
 </head>
 <body>
     <div class="title-box">
@@ -16,23 +16,30 @@
     <section class="biography-box">
         <h2>Biography</h2>
         <p>
-            Welcome to Ja Motogeek! </p><br><p>  I have always had a deep passion for gaming, which ignited my creativity and 
-            inspired me to dive into the world of indie game development. My journey began with hours spent 
-            exploring vast virtual worlds, honing my skills, and dreaming of creating my own games.
-            </p>
-        <p>
-            As I progressed from a gamer to an indie developer, I have embraced the challenges of game design, 
-            programming, and storytelling. My mission is to craft immersive experiences that resonate with players 
-            and capture the magic of gaming that inspired me in the first place. Join me as I share insights, 
-            showcase my projects, and connect with fellow enthusiasts on this exciting adventure!
+            Welcome to Ja Motogeek! I have always had a deep passion for gaming, which ignited my creativity and inspired me to dive into the world of indie game development...
         </p>
     </section>
-<!-- <section> future javascript minigame window </section> -->
+
+    <!-- Game Section -->
+    <section class="connectFive">
+        <h2>Connect 5</h2>
+        <div class="game">
+            <div class="game-board"></div>
+            <div class="game-info">
+                <div class="status"></div>
+                <ol class="moves"></ol>
+            </div>
+            <button class="reset-button">Reset Game</button>
+
+        </div>
+    </section>
+    
+
     <section>
         <h2>Links</h2>
         <nav>
             <ul>
-                <li>401<a href="https://www.instagram.com/ja_motogeek" target="_blank">Instagram</a></li>
+                <li><a href="https://www.instagram.com/ja_motogeek" target="_blank">Instagram</a></li>
                 <li><a href="https://www.facebook.com/ja.motogeek?mibextid=LQQJ4d" target="_blank">Facebook</a></li>
                 <li><a href="https://www.twitch.tv/ja_motogeek" target="_blank">Twitch</a></li>
                 <li><a href="https://twitter.com/ja_motogeek" target="_blank">Twitter aka X</a></li>
@@ -40,27 +47,25 @@
             </ul>
         </nav>
     </section>
-    
+
+    <!-- Contact Form Section -->
     <section class="forms">
         <form action="/submit" method="POST">
-            <table> 
-                <caption class="table title"><b> Have any questions? </b></caption>
-                
-                <tr> 
-                    <th> <label for="name">Name:</label> </th>
-                    <td> <input type="text" id="name" name="name"> </td>
+            <table>
+                <caption class="table title"><b>Have any questions?</b></caption>
+                <tr>
+                    <th><label for="name">Name:</label></th>
+                    <td><input type="text" id="name" name="name"></td>
                 </tr>
                 <tr>
-                    <th> <label for="email">Email:</label> </th>
-                    <td> <input type="email" id="email" name="email"> </td>
+                    <th><label for="email">Email:</label></th>
+                    <td><input type="email" id="email" name="email"></td>
                 </tr>
                 <tr>
-                    <th> <label for="commentsInquiry">Comments/Inquiries:</label> </th>
-                    <br>
-                    <td> <br><input type="text" id="commentsInquiry" name="commentsInquiry" maxlength="300"> </td>
-                </tr><br>
+                    <th><label for="commentsInquiry">Comments/Inquiries:</label></th>
+                    <td><input type="text" id="commentsInquiry" name="commentsInquiry" maxlength="300"></td>
+                </tr>
             </table>
-            <!-- Add the send button here -->
             <div class="button-container">
                 <button type="submit">Send</button>
             </div>

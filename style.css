@@ -16,7 +16,7 @@ body {
 
 @keyframes mymove {
     from {background-image: url("vangogh.gif");}
-    to {background-color: blue;}
+    to {background-color: rgb(255, 149, 0);}
   }
 
 /* Import the custom font */
@@ -36,7 +36,7 @@ h1 {
  
 
 .title-box {
-    border: solid lightskyblue;
+    border: solid rgb(255, 149, 0);
     border-width: 10px;
     border-radius: 15px;
     background-color: #f0e68c; /* Adjust to match desired color */
@@ -50,7 +50,7 @@ h2 {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     background-color: #f0e68c; /* Match background color with title-box */
-    border: solid lightskyblue; /* Match border color with title-box */
+    border: solid rgb(255, 149, 0); /* Match border color with title-box */
     border-width: 5px; /* Match border width */
     border-radius: 15px; /* Match border radius */
     padding: 10px; /* Padding inside the box */
@@ -63,7 +63,7 @@ h2 {
     flex-direction: column; /* Arrange children in a column */
     align-items: center; /* Center children horizontally */
     justify-content: center; /* Center children vertically */
-    background-color: lightskyblue; /* Set background color */
+    background-color: rgb(255, 149, 0); /* Set background color */
     border: 5px solid #f0e68c; /* Same color as "Ja Motogeek" title */
     border-radius: 15px; /* Rounded edges */
     padding: 20px; /* Padding inside the box */
@@ -97,7 +97,7 @@ a {
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    background-color: lightskyblue; /* Background color for links */
+    background-color: rgb(255, 149, 0); /* Background color for links */
     color: white; /* Font color for links */
     border-radius: 8px; /* Rounded edges */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Add box shadow */
@@ -105,7 +105,7 @@ a {
 }
 
 a:hover {
-    background-color: dodgerblue; /* Change color on hover */
+    background-color: rgb(255, 106, 0); /* Change color on hover */
 }
 
 .forms {
@@ -113,7 +113,7 @@ a:hover {
     flex-direction: column; /* Arrange children in a column */
     flex-wrap: wrap;
     justify-content: space-evenly; /* Center children vertically */
-    background-color: lightskyblue; /* Set background color */
+    background-color:rgb(255, 149, 0); /* Set background color */
     border: 5px solid #f0e68c; /* Same color as "Ja Motogeek" title */
     border-radius: 15px; /* Rounded edges */
     padding: 20px; /* Padding inside the box */
@@ -141,7 +141,7 @@ a:hover {
 
 button {
     padding: 10px 20px;
-    background-color: lightskyblue; /* Match background color */
+    background-color: rgb(255, 149, 0); /* Match background color */
     color: white;
     border: 5px solid #f0e68c; /* Match border color */
     border-radius: 8px; /* Match border radius with other elements */
@@ -151,7 +151,7 @@ button {
 }
 
 button:hover {
-    background-color: dodgerblue; /* Match hover effect for links */
+    background-color: rgb(255, 149, 0); /* Match hover effect for links */
 }
 
 caption {
@@ -170,3 +170,47 @@ caption {
     display: flex;
     align-items:flex-start;
 }
+
+.connectFive {
+    display: flex;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(255, 149, 0); /* Background color for links */
+    color: white; /* Font color for links */
+    border: 5px solid #f0e68c; /*added border */
+    border-radius: 8px; /* Rounded edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Add box shadow */
+    transition: background-color 0.3s ease;
+}
+.reset-button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: rgb(255, 149, 0);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reset-button:hover {
+    background-color: rgb(255, 106, 0);
+}
+.square {
+    width: 60px; /* Set fixed width */
+    height: 60px; /* Set fixed height */
+    font-size: 24px; /* Font size inside the button */
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid black;
+    display: inline-block;
+    box-sizing: border-box; /* Ensure padding/borders don't affect size */
+}
+
+.board-row {
+    display: flex;
+}
+
