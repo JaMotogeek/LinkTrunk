@@ -1,5 +1,11 @@
 /* General styling */
 
+/* things to do:
+change X/o size to fill box, maybe change color when box is taken based on the player turn
+move which player is playing next to the Connect 4 box
+place either an instructions popup, or instructions box next to the playing field
+tba on other idea */
+
 body {
     background-image: url("vangogh.gif");
     background-size: cover;
@@ -233,7 +239,8 @@ caption {
 
 /* Game status */
 .status {
-    color: black; /* Black text */
+    color: black; /* Black text */  
+    text-align: start;
     font-size: 24px;
     margin: 10px 0;
 }
