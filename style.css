@@ -53,7 +53,8 @@ h1 {
 
 /* Heading styling */
 h2 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'InkheartBrushDry', 'Courier New', Courier, monospace;
+    font-size: 80px;
     text-align: center;
     background-color: #66CDAA; /* Greenish aquamarine fill */
     border: solid #FFA500; /* Orange border */
@@ -239,9 +240,10 @@ caption {
 
 /* Game status */
 .status {
+    font-family: 'InkheartBrushDry', 'Courier New', Courier, monospace; /*changed to motoscript*/
     color: black; /* Black text */  
     text-align: start;
-    font-size: 24px;
+    font-size: 48px;
     margin: 10px 0;
 }
 
