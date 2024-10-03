@@ -1,4 +1,4 @@
-/* style.css */
+/* General styling */
 
 body {
     background-image: url("vangogh.gif");
@@ -17,79 +17,82 @@ body {
 @keyframes mymove {
     from {background-image: url("vangogh.gif");}
     to {background-color: rgb(255, 149, 0);}
-  }
+}
 
-/* Import the custom font */
 @font-face {
     font-family: 'InkheartBrushDry';
     src: url('fonts/Fenotype - InkheartBrushDry.otf') format('opentype');
 }
 
-/* Apply the custom font to Ja Motogeek */
 h1 {
     text-align: center;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    font-family: 'InkheartBrushDry', 'Courier New', Courier, monospace; /* Use custom font */
+    font-family: 'InkheartBrushDry', 'Courier New', Courier, monospace;
     font-size: 6rem;
     margin: 0;
 }
- 
 
+/* Title box */
 .title-box {
-    border: solid rgb(255, 149, 0);
+    border: solid #FFA500; /* Orange border */
     border-width: 10px;
     border-radius: 15px;
-    background-color: #f0e68c; /* Adjust to match desired color */
+    background-color: #66CDAA; /* Greenish aquamarine fill */
     padding: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
     margin: 20px;
+    color: black; /* Black text */
 }
 
+/* Heading styling */
 h2 {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    background-color: #f0e68c; /* Match background color with title-box */
-    border: solid rgb(255, 149, 0); /* Match border color with title-box */
-    border-width: 5px; /* Match border width */
-    border-radius: 15px; /* Match border radius */
-    padding: 10px; /* Padding inside the box */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for visual effect */
-    margin: 20px 0; /* Margin for spacing */
+    background-color: #66CDAA; /* Greenish aquamarine fill */
+    border: solid #FFA500; /* Orange border */
+    border-width: 5px;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    color: black; /* Black text */
 }
 
+/* Biography box */
 .biography-box {
-    display: flex; /* Enable flexbox */
-    flex-direction: column; /* Arrange children in a column */
-    align-items: center; /* Center children horizontally */
-    justify-content: center; /* Center children vertically */
-    background-color: rgb(255, 149, 0); /* Set background color */
-    border: 5px solid #f0e68c; /* Same color as "Ja Motogeek" title */
-    border-radius: 15px; /* Rounded edges */
-    padding: 20px; /* Padding inside the box */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for the box */
-    max-width: 90%; /* Maximum width for the box, adjust as needed */
-    margin: 20px; /* Space around the box */
-    word-wrap: break-word; /* Ensure long words wrap properly */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #66CDAA; /* Greenish aquamarine fill */
+    border: 5px solid #FFA500; /* Orange border */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    margin: 20px;
+    word-wrap: break-word;
+    color: black; /* Black text */
 }
 
 .biography-box p {
-    margin: 10px 0; /* Space between paragraphs */
-    text-align: center; /* Center the text */
+    margin: 10px 0;
+    text-align: center;
 }
 
 nav {
     display: flex;
-    justify-content: center; /* Center navigation links */
+    justify-content: center;
 }
 
 ul {
     list-style: none;
-    padding: 0; /* Remove default padding */
+    padding: 0;
 }
 
 li {
-    margin: 5px 0; /* Space between list items */
+    margin: 5px 0;
 }
 
 a {
@@ -97,67 +100,63 @@ a {
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    background-color: rgb(255, 149, 0); /* Background color for links */
-    color: white; /* Font color for links */
-    border-radius: 8px; /* Rounded edges */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Add box shadow */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
+    background-color: #66CDAA; /* Greenish aquamarine fill */
+    color: black; /* Black text */
+    border-radius: 8px;
+    border: 2px solid #FFA500; /* Orange border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
 }
 
 a:hover {
-    background-color: rgb(255, 106, 0); /* Change color on hover */
+    background-color: #5EB69D; /* Darker greenish aquamarine on hover */
 }
 
 .forms {
-    display: flex; /* Enable flexbox */
-    flex-direction: column; /* Arrange children in a column */
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-evenly; /* Center children vertically */
-    background-color:rgb(255, 149, 0); /* Set background color */
-    border: 5px solid #f0e68c; /* Same color as "Ja Motogeek" title */
-    border-radius: 15px; /* Rounded edges */
-    padding: 20px; /* Padding inside the box */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for the box */
-    max-width: 90%; /* Maximum width for the box, adjust as needed */
-    margin: 20px; /* Space around the box */
-    word-wrap: break-word;
+    justify-content: space-evenly;
+    background-color: #66CDAA; /* Greenish aquamarine fill */
+    border: 5px solid #FFA500; /* Orange border */
     border-radius: 15px;
-    border: #f0e68c, 5px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    margin: 20px;
+    word-wrap: break-word;
 }
 
-.forms td,tr { 
-    display:flex; /*trying to adjust spacing in the form box*/
+.forms td, tr { 
+    display: flex;
     flex-wrap: wrap;
-
-    
-
 }
 
 .button-container {
     display: flex;
     justify-content: center;
-    margin-top: 20px; /* Adjust for spacing */
+    gap: 20px; /* Adds space between buttons */
+    margin-top: 20px;
 }
 
 button {
     padding: 10px 20px;
-    background-color: rgb(255, 149, 0); /* Match background color */
-    color: white;
-    border: 5px solid #f0e68c; /* Match border color */
-    border-radius: 8px; /* Match border radius with other elements */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Match shadow style */
+    background-color: #66CDAA; /* Greenish aquamarine fill */
+    color: black; /* Black text */
+    border: 5px solid #FFA500; /* Orange border */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth hover effect */
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: rgb(255, 149, 0); /* Match hover effect for links */
+    background-color: #5EB69D; /* Darker greenish aquamarine on hover */
 }
 
 caption {
-    align-self: flex-start; /*added some fancy stuff to my caption in the input form */
+    align-self: flex-start;
     font-family: 'InkheartBrushDry';
-    src: url('fonts/Fenotype - InkheartBrushDry.otf') format('opentype');
     font-size: 3rem;
 }
 
@@ -166,52 +165,88 @@ caption {
         max-width: 90%;
     }
 }
+
 .table title {
     display: flex;
-    align-items:flex-start;
+    align-items: flex-start;
 }
 
+/* Connect 4 game section */
 .connectFive {
     display: flex;
-    display: block;
+    flex-direction: column;
+    align-items: center;
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    background-color: rgb(255, 149, 0); /* Background color for links */
-    color: white; /* Font color for links */
-    border: 5px solid #f0e68c; /*added border */
-    border-radius: 8px; /* Rounded edges */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Add box shadow */
-    transition: background-color 0.3s ease;
-}
-.reset-button {
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: rgb(255, 149, 0);
-    color: white;
-    border: none;
+    background-color: #66CDAA; /* Greenish aquamarine fill */
+    color: black; /* Black text */
+    border: 5px solid #FFA500; /* Orange border */
     border-radius: 8px;
-    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     transition: background-color 0.3s ease;
 }
 
-.reset-button:hover {
-    background-color: rgb(255, 106, 0);
-}
-.square {
-    width: 50px; /* Adjusted width */
-    height: 50px; /* Adjusted height */
-    font-size: 20px;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    border: 1px solid black;
-    display: inline-block;
-    box-sizing: border-box; /* Ensure padding/borders don't affect size */
+.connectFive:hover {
+    background-color: #5EB69D; /* Darker greenish aquamarine on hover */
 }
 
+/* Game container */
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Board row */
 .board-row {
     display: flex;
 }
 
+/* Reset and Game Start buttons beside each other */
+.game-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between buttons */
+}
 
+/* Game square styling */
+.square {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #66CDAA; /* Greenish aquamarine fill */
+    border: 2px solid #FFA500; /* Orange border */
+    color: black; /* Black text */
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.square:hover {
+    background-color: #5EB69D; /* Darker greenish aquamarine on hover */
+}
+
+/* Game status */
+.status {
+    color: black; /* Black text */
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Move buttons */
+.moves button {
+    background-color: #66CDAA; /* Greenish aquamarine fill */
+    color: black; /* Black text */
+    border: 2px solid #FFA500; /* Orange border */
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+
+.moves button:hover {
+    background-color: #5EB69D; /* Darker greenish aquamarine on hover */
+}
