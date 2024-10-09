@@ -259,3 +259,12 @@ caption {
 .moves button:hover {
     background-color: #5EB69D; /* Darker greenish aquamarine on hover */
 }
+
+a {
+    border: #5EB69D;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: 2px solid #FFA500; /* Orange border */
+    font-family: 'InkheartBrushDry', 'Courier New', Courier, monospace;
+    font-size: 64px;
+}
